@@ -5,7 +5,21 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>Hello world</h1>
+				<form>
+					<input type="text" placeholder="****"/>
+					<input type="text" placeholder="****"/>
+					<input type="text" placeholder="****"/>
+					<input type="text" placeholder="****"/>
+					<input type="text" placeholder="MM"/>
+					<input type="text" placeholder="YY"/>
+					<input type="text" placeholder="Your Full Name"/>
+				</form>
+
+				<img src="" alt=""/>
+
+				<form>
+					<input type="text"  placeholder="CVC"/>
+				</form>
       </div>
     )
   }
