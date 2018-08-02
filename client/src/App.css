@@ -1,0 +1,11 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;	
+}
+
+.cc {
+	border: 1px solid blue;
+	width: 500px;
+	height: 250px;
+}

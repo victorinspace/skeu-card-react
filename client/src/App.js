@@ -1,24 +1,26 @@
 import React, { Component } from 'react'
 import './App.css'
+import valid from 'card-validator'
 
 class App extends Component {
+	componentDidMount(){
+		console.log(valid)
+	}
   render() {
     return (
       <div>
-				<form>
-					<input type="text" placeholder="****"/>
-					<input type="text" placeholder="****"/>
-					<input type="text" placeholder="****"/>
-					<input type="text" placeholder="****"/>
-					<input type="text" placeholder="MM"/>
-					<input type="text" placeholder="YY"/>
+				<div className="cc">
+					<i className="fa fa-cc-mastercard"></i>
+				</div>
+
+				<form className="card-input">
+					<input type="text" placeholder="****************"/>
+					<input type="text" placeholder="MM/YY"/>
 					<input type="text" placeholder="Your Full Name"/>
 				</form>
 
-				<img src="" alt=""/>
-
 				<form>
-					<input type="text"  placeholder="CVC"/>
+					<input type="text" placeholder="CVC"/>
 				</form>
       </div>
     )
@@ -26,3 +28,8 @@ class App extends Component {
 }
 
 export default App
+
+
+// <i className="fa fa-cc-visa"></i>
+// <i className="fa fa-cc-amex"></i>
+// <i className="fa fa-cc-discover"></i>
