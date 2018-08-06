@@ -1,11 +1,65 @@
 * {
 	box-sizing: border-box;
-	padding: 0;
-	margin: 0;	
 }
 
-.cc {
-	border: 1px solid blue;
+html {
+	font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+}
+
+.container {
 	width: 500px;
+	margin: 20px auto;
+	padding: 10px;
+}
+
+/* Card Display */
+.cc-front {
+	width: 400px;
 	height: 250px;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 0 auto;
+	background: linear-gradient(217deg, #aa3939, #d46a6a, #faa, #801515, #500);
+	box-shadow: 7px 7px 13px 4px #888;
+}
+
+.cc-chip {
+	width: 50px;
+	height: 50px;
+}
+
+.cc-logo {
+	font-size: 4em;
+	color: #353535;
+	float: right;
+	margin: -30px 0;
+}
+
+.info-display {
+	letter-spacing: 0.1em;
+	padding: 10px;
+	margin-top: 25px;
+}
+
+.card-info {
+	color: #eee;
+	font-size: 1.5em;
+	font-weight: bold;
+	-webkit-text-stroke: 1px #000;
+	text-shadow: 1px 1px 3px #000;
+}
+
+/* User Input Area */
+.card-input {
+	margin: 20px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.input-field {
+	height: 50px;
+	width: 190px;
+	margin: 5px;
+	padding-left: 10px;
 }
