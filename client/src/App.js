@@ -47,19 +47,19 @@ class App extends Component {
 			if (numberValidation.card.type === 'visa') {
 				this.setState({
 					ccLogo: 'fa fa-cc-visa'
-				}) else if (numberValidation.card.type === 'discover') {
+				})
+			} else if (numberValidation.card.type === 'discover') {
 					this.setState({
 						ccLogo: 'fa fa-cc-discover'
 					}) 
-				} else if (numberValidation.card.type === 'discover') {
-					this.setState({
-						ccLogo: 'fa fa-cc-discover'
-					})
-				} else if (numberValidation.card.type === 'american-express') {
-					this.setState({
-						ccLogo: 'fa fa-cc-amex'
-					})
-				}
+			} else if (numberValidation.card.type === 'mastercard') {
+				this.setState({
+					ccLogo: 'fa fa-cc-mastercard'
+				})
+			} else if (numberValidation.card.type === 'american-express') {
+				this.setState({
+					ccLogo: 'fa fa-cc-amex'
+				})
 			}
 		}
 	}
